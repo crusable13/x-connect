@@ -1,0 +1,42 @@
+git
+cd <name of directory>
+which git
+git init
+git init - initialize a new repo
+git status - shows the status of a repository
+git add <names of all files you want to track>
+git add .
+- all files
+	
+me	12:47 PM
+Christophers-MacBook-Air:x-connect csmith$ git add. 
+git: 'add.' is not a git command. See 'git --help'.
+
+Did you mean this?
+ add
+	
+Nathan Fair	12:47 PM
+git add.
+git add .
+git init - initialize a repo
+git add <name of files>
+staged files are green in the status
+git status
+git commit
+node example hello.js start of program app.js
+app.js not working
+	
+me	12:53 PM
+~
+	
+Nathan Fair	1:00 PM
+.gitconfig
+emacs .gitconfig
+editor = emacs -q
+git add
+git commit
+C-x C-c
+git lg
+git checkout (pick some version of in time)
+git checkout hash (that number after the commit)
+git branch day1
