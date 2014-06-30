@@ -28,4 +28,7 @@ setTimeout(function(){
 }, 15000);
 
 
+console.log("did i set this timeout correctly nathan?")
 
+
+set setTimeout agian i really dont know if im doing this right nathan 
