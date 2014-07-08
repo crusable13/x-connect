@@ -1,5 +1,3 @@
-
-
 // we are using someone else module
 var readline = require('readline');
 
@@ -17,8 +15,6 @@ rl.question("Where on the board would you like to move? ",
    // the user hits 'enter'
    console.log("Did you want to move here?",answer);
 	var baz = answer;
-
-
 });
 
 console.log("Your first move was", answer)
@@ -27,7 +23,3 @@ console.log("Your first move was", answer)
 setTimeout(function(){
    rl.close();
 }, 10000);
-
-
-
-

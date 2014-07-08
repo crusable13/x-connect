@@ -1,0 +1,3 @@
+var userChoice = prompt("Where will you move? give? Give x and y coordinates please.");
+var usersMoves = [];
+usersmoves[usersMove.length] = userChoice
