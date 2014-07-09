@@ -1,4 +1,4 @@
-
+var readline = require('readline');
 
 // readline is an object witha method createInterface
 // createInterface is returning an object, which we store in the variable 'rl'
