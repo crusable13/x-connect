@@ -1,0 +1,4 @@
+convert strings to numbers
+convert decimals to integers
+if the string isn't a number set the default -1
+getMove(numMove)
