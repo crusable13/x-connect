@@ -17,8 +17,8 @@ var answers = [];  // I create an array for my answers
 // in this case the callback passed into the question function is executed after you hit enter.
 // the callback function also gets passed a single arguement, where the value of that arguement
 // is the string you typed before you hit enter
-
-function getMove() {
+var numMove = prompt("How many moves shall you move?")
+function getMove(numMove) {
     var move = {}; // moves are objects
     console.log("Where on the board would you like to move?");
     rl.question("X:",
@@ -28,7 +28,7 @@ function getMove() {
             rl.question("Y:", function(Y) { // << start of callback 2.
                 var Y = parseInt(Y);
                 if(isNaN(Y)) {
-                    Y = 2
+                    Y = -1
                 }
                 //This callback is called after the user hits 'enter'
                 move.y = Y; // moves have a property y
@@ -42,7 +42,7 @@ function getMove() {
             }); // << start of callback 2
             var X = parseInt(X);
             if(isNaN(X)) {
-                X = 1
+                X = -1
             }
             move.x = X; // moves have a property x
 
