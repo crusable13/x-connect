@@ -26,6 +26,8 @@ function getMove() {
             // we are inside the call back function it gets executed after
             // the user hits 'enter'
             rl.question("Y:", function(Y) { // << start of callback 2.
+                var Y = parseInt(Y);
+                if(isNaN(Y)) {Y = 2}
                 //This callback is called after the user hits 'enter'
                 move.y = Y; // moves have a property y
                 answers.push(move);
@@ -36,6 +38,8 @@ function getMove() {
                     getMove();
                 }
             }); // << start of callback 2
+            var X = parseInt(X);
+            if(isNaN(X)) {X = 1}
             move.x = X; // moves have a property x
 
         }); // <<< end of callback 1
