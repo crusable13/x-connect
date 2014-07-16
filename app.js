@@ -9,7 +9,7 @@ var rl = readline.createInterface({ // create interface takes an object as its a
     output: process.stdout // stdin and stdout < stand for standard in and standard out
 });
 
-
+x
 var answers = [];  // I create an array for my answers
 
 // rl.question is a function that takes 2 arguments: a string, and a 'callback' function
@@ -17,7 +17,7 @@ var answers = [];  // I create an array for my answers
 // in this case the callback passed into the question function is executed after you hit enter.
 // the callback function also gets passed a single arguement, where the value of that arguement
 // is the string you typed before you hit enter
-var numMove = prompt("How many moves shall you move?")
+
 function getMove(numMove) {
     var move = {}; // moves are objects
     console.log("Where on the board would you like to move?");
@@ -33,11 +33,11 @@ function getMove(numMove) {
                 //This callback is called after the user hits 'enter'
                 move.y = Y; // moves have a property y
                 answers.push(move);
-                if (answers.length > 2) { // this is where we decide how many moves to collect
+                if (answers.length >= numMove) { // this is where we decide how many moves to collect
                     rl.close();
                 }
                 else { // if we don't have enough moves, call getMove again and get another
-                    getMove();
+                    getMove(numMove);
                 }
             }); // << start of callback 2
             var X = parseInt(X);
@@ -50,7 +50,7 @@ function getMove(numMove) {
 
 }
 
-getMove();
+getMove(5);
 
 
 /// A message from nathan

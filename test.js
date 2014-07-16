@@ -9,7 +9,7 @@ var rl = readline.createInterface({ // create interface takes an object as its a
     output: process.stdout // stdin and stdout < stand for standard in and standard out
 });
 
+//rl.question("this", function (baz) { console.log(baz)});
 
-rl.question("this", function (baz) { console.log(baz)});
-
-setTimeout(function() {rl.close();}, 5000);
+//setTimeout(function() {rl.close();}, 5000);
+setTimeout(function() { console.log("Big long fart.");}, 5000);
