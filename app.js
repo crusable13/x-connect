@@ -47,7 +47,7 @@ function getMove(numMove) {
             move.x = X; // moves have a property x
 
         }); // <<< end of callback 1
-
+answers.push(getMove)
 }
 
 getMove(5);
