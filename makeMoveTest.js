@@ -1,8 +1,14 @@
+var aBoard = {
+  xSize : 10,
+  ySize : 10,
+  board: [[],[],[],[],[],[],[],[],[],[]]
+}
+
 function makeMove(x, y, person, board) {
   // is this a valid move
-  if ( ) {
+  if (true ) {
   // update the board
-    
+
     return true;
   }
   else {
@@ -10,7 +16,7 @@ function makeMove(x, y, person, board) {
   }
 }
 if(makeMove(7, 5, 'X', aBoard) ) {
-	console.log(aBoard.board[7]{5})
+	console.log("(7,5) = " + aBoard.board[7][5] + " should equal X");
 }
 else {
   console.log('makeMove failed and shouldnt have');
