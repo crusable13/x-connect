@@ -1,8 +1,0 @@
-aBoard = {
-  xSize : 10,
-  ySize : 10,
-  board: [[],[],[],[],[],[],[],[],[],[]]
-}
-function presentBoard(board){
-  //  display board
-}
