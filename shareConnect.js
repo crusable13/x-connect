@@ -36,6 +36,7 @@ function checkWin(board) {
   // return either 'X', 'Y', ''  
 }
 
+
 function presentBoard(board){
   //  display board
 }
