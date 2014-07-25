@@ -12,17 +12,21 @@ var anotherBoard = {
 function makeMove(x, y, person, thisBoard) {
   // is this a valid move
   if(x >= thisBoard.xSize || x < 0) {
+    
     return false
   }
   if(y >= thisBoard.ySize || y < 0) {
+    
     return false
   }
   if(thisBoard.board[x][y] !== undefined) {
+    
     return false
   }
   // this is now a valid move
   // update board
   thisBoard.board[x][y] = person;
+return true
 }
 
 if(makeMove(7, 5, 'X', anotherBoard) ) {
