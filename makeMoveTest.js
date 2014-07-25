@@ -39,7 +39,7 @@ else {
 
 if(makeMove(7, 5, 'X', aBoard) ) {
   console.log("(7,5) = " + aBoard.board[7][5] + " should equal X");
-    console.log("(8,2) = " + aBaord.board[8][2] + " should equal undefined");
+    console.log("(8,2) = " + aBoard.board[8][2] + " should equal undefined");
 }
 else {
   console.log('makeMove failed and shouldnt have');
