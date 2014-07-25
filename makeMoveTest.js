@@ -25,7 +25,7 @@ function makeMove(x, y, person, thisBoard) {
   thisBoard.board[x][y] = person;
 }
 
-if(makeMove(7, 5, 'X', anotherBaord) ) {
+if(makeMove(7, 5, 'X', anotherBoard) ) {
   console.log("(7,5) = " + anotherBoard.board[7][5] + " should equal X");
     console.log("(8,2) = " + anotherBoard.board[8][2] + " should equal undefined");
 }
