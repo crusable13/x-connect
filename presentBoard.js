@@ -9,14 +9,15 @@ var rl = readline.createInterface({ // create interface takes an object as its a
     output: process.stdout // stdin and stdout < stand for standard in and standard out
 });
 
-
+/*
 problems
 
 var thing = 'baz'
-thing = thing + 'bar'
-thing == 'bazbar'
+thing = thing + 'bar' + '|'
+thing == 'bazbar|'
 var row1 = aBoard.board[0][0];
-row1 = row1 + aBoard.board|[1]|[0]|;
+row1 = row1 + aBoard.board[1][0];
+*/
 
 // problem 1 what about when a space is undefined -> ' '
 // problem 2 XXO X in between each element we need '|'
@@ -31,8 +32,27 @@ row1 = row1 + aBoard.board|[1]|[0]|;
 aBoard = {
   xSize : 10,
   ySize : 10,
-  board: [[],[],[],[],[],[],[],[],[],[]]
+  board: [    ['X', 'O', 'X', 'X']   ,['X', 'O', 'O'],['X', , 'O'],[],[],[],[],[],[],[]]
 }
-function presentBoard(board){
-  rl.write(person)
+function presentBoard(thisBoard){
+//  <arrayname>[0]
+  for(var i = 0; i < thisBoard.board.length; i++) {
+	var arrayValue = thisBoard.board[i];
+    var line = '';
+    for(var j =0; j < arrayValue.length; j++) {
+
+		line = line + arrayValue[j];
+    if(arrayValue === undefined) {
+      arrayValue = ''
+    }
+    }
+    rl.write(line);
+  }
 }
+// XOXX
+// XOO
+
+presentBoard(aBoard);
+
+rl.close();
+
