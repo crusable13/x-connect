@@ -40,10 +40,11 @@ function presentBoard(thisBoard){
 	var arrayValue = thisBoard.board[i];
     var line = '';
     for(var j =0; j < arrayValue.length; j++) {
-
-		line = line + arrayValue[j];
-    if(thisBoard.board[j] === undefined) {
-      thisBoard.board[j] = '';
+      if(arrayValue[j] !== undefined) {
+		line = line + arrayValue[j] + "|";
+  }
+    else {
+      line = line + "|";
     }
     }
     rl.write(line);
