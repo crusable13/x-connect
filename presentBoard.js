@@ -41,7 +41,7 @@ function presentBoard(thisBoard){
     var line = '';
     for(var j =0; j < arrayValue.length; j++) {
 
-		line = line + arrayValue[j] + |;
+		line = line + arrayValue[j];
     if(thisBoard.board[i] === undefined) {
       thisBoard.board[i] = '';
     }
