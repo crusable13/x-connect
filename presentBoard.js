@@ -32,7 +32,7 @@ row1 = row1 + aBoard.board[1][0];
 aBoard = {
   xSize : 10,
   ySize : 10,
-  board: [    ['X'|, 'O'|, 'X'|, 'X'|]   ,['X'|, 'O'|, 'O'|],['X'|, , 'O'|],[],[],[],[],[],[],[]]
+  board: [    ['X', 'O', 'X', 'X']   ,['X', 'O', 'O'],['X', , 'O'],[],[],[],[],[],[],[]]
 }
 function presentBoard(thisBoard){
 //  <arrayname>[0]
