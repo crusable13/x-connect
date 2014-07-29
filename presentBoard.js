@@ -42,8 +42,8 @@ function presentBoard(thisBoard){
     for(var j =0; j < arrayValue.length; j++) {
 
 		line = line + arrayValue[j];
-    if(thisBoard.board[i] === undefined) {
-      thisBoard.board[i] = '';
+    if(thisBoard.board[j] === undefined) {
+      thisBoard.board[j] = '';
     }
     }
     rl.write(line);
