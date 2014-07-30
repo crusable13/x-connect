@@ -54,6 +54,6 @@ function presentBoard(thisBoard){
 // XOO
 
 presentBoard(aBoard);
-
+// I Have an idea on how to  make it better but i have no idea where i would start
 rl.close();
 
