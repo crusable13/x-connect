@@ -44,7 +44,7 @@ function presentBoard(thisBoard){
 		line = line + arrayValue[j] + "|";
   }
     else {
-      line = line + "|";
+      line = line + " |";
     }
     }
     rl.write(line);
