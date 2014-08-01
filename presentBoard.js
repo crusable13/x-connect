@@ -39,6 +39,7 @@ function presentBoard(thisBoard){
   for(var i = 0; i < thisBoard.board.length; i++) {
   var arrayValue = thisBoard.board[i];
     var line = '';
+    var divider = '';
     for(var j =0; j < arrayValue.length; j++) {
       if(arrayValue[j] !== undefined) {
     line = line + arrayValue[j] + "|";
