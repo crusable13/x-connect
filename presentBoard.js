@@ -32,7 +32,16 @@ row1 = row1 + aBoard.board[1][0];
 aBoard = {
   xSize : 10,
   ySize : 10,
-  board: [ ['X', 'O', 'X', 'X'] ,['X', 'O', 'O'], ['X', , 'O'], [],[],[],[],[],[],[]]
+  board: [ ['X', 'O', 'X', 'X', , , , , , ] ,
+           ['X', 'O', 'O',    , , , , , , ], 
+           ['X',    , 'O',    , , , , , , ], 
+           [   ,    ,  ,    , , , , , , ],
+           [   ,  ,  ,    , , , , , , ],
+           [   ,    ,    ,    , , , , , , ],
+           [   ,    ,    ,    , , , , , , ],
+           [   ,    ,    ,    , , , , , , ],
+           [   ,    ,    ,    , , , , , , ],
+           [   ,    ,    ,    , , , , , , ] ]
 }
 function presentBoard(thisBoard){
 //  <arrayname>[0]
@@ -42,12 +51,12 @@ function presentBoard(thisBoard){
     var divider = '';
     for(var j =0; j < arrayValue.length; j++) {
       if(arrayValue[j] !== undefined) {
-    line = line + arrayValue[j] + "|";
+      line = line + arrayValue[j] + "|";
       divider = divider +      "-+"
       }
       else {
         line = line + "|";
-      divider =divider + "-+"
+        divider =divider + "-+"
       }
     }
     line = line + "\n"
@@ -57,12 +66,6 @@ function presentBoard(thisBoard){
   }
 }
 
-
-// X|O|X|X|X|O|O|X| |O|
-//problems:
-// 1) all in one line -> \n
-// 2) no bars between lines
-// 3)
 presentBoard(aBoard);
 // I Have an idea on how to  make it better but i have no idea where i would start
 rl.close();
