@@ -35,8 +35,8 @@ aBoard = {
   board: [ ['X', 'O', 'X', 'X', , , , , , ] ,
            ['X', 'O', 'O',    , , , , , , ], 
            ['X',    , 'O',    , , , , , , ], 
-           [   ,    ,  ,    , , , , , , ],
-           [   ,  ,  ,    , , , , , , ],
+           [   ,    ,    ,    , , , , , , ],
+           [   ,    ,    ,    , , , , , , ],
            [   ,    ,    ,    , , , , , , ],
            [   ,    ,    ,    , , , , , , ],
            [   ,    ,    ,    , , , , , , ],
@@ -51,11 +51,11 @@ function presentBoard(thisBoard){
     var divider = '';
     for(var j =0; j < arrayValue.length; j++) {
       if(arrayValue[j] !== undefined) {
-      line = line + arrayValue[j] + "|";
+      line = line + arrayValue[j] + " |";
       divider = divider +      "-+"
       }
       else {
-        line = line + "|";
+        line = line + " |";
         divider =divider + "-+"
       }
     }
