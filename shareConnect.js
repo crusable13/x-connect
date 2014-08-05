@@ -74,7 +74,7 @@ while (gameOn) {
 }
 
 /*
-to build:
+to buildkey: "value", 
 makeMove
 checkWin
 presentBoard
