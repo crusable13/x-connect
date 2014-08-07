@@ -32,22 +32,22 @@ row1 = row1 + aBoard.board[1][0];
 aBoard = {
   xSize : 10,
   ySize : 10,
-  board: [ ["|"'X','O','X','X', , , , , , ] ,
-           ["|"'X','O','O',   , , , , , , ], 
-           ["|"'X',   ,'O',   , , , , , , ], 
-           ["|"   ,   ,   ,   , , , , , , ],
-           ["|"   ,   ,   ,   , , , , , , ],
-           ["|"   ,   ,   ,   , , , , , , ],
-           ["|"   ,   ,   ,   , , , , , , ],
-           ["|"   ,   ,   ,   , , , , , , ],
-           ["|"   ,   ,   ,   , , , , , , ],
-           ["|"   ,   ,   ,   , , , , , , ] ]
+  board: [ ['X','O','X','X', , , , , , ] ,
+           ['X','O','O',   , , , , , , ], 
+           ['X',   ,'O',   , , , , , , ], 
+           [   ,   ,   ,   , , , , , , ],
+           [   ,   ,   ,   , , , , , , ],
+           [   ,   ,   ,   , , , , , , ],
+           [   ,   ,   ,   , , , , , , ],
+           [   ,   ,   ,   , , , , , , ],
+           [   ,   ,   ,   , , , , , , ],
+           [   ,   ,   ,   , , , , , , ] ]
 }
 function presentBoard(thisBoard){
 //  <arrayname>[0]
   for(var i = 0; i < thisBoard.board.length; i++) {
   var arrayValue = thisBoard.board[i];
-    var line = '';
+    var line = '|';
     var divider = '';
     for(var j =0; j < arrayValue.length; j++) {
       if(arrayValue[j] !== undefined) {
