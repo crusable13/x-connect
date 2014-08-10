@@ -60,7 +60,7 @@ function presentBoard(thisBoard){
       }
     }
     line = line + "\n"
-    divider = divider + "\n"
+    divider = divider + "+\n"
     rl.write(line);
   rl.write(divider);  
   }

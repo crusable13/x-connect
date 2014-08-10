@@ -1,0 +1,16 @@
+brew install <program name>
+ls -> prints files and directories in my current directory
+cd - change directory
+mkdir - make directory
+touch <filename>
+
+1) ask user for (x ,y ) corr.
+
+2) if the user takes too long (how long is too long is up to you) pick something random
+the values for x, and y should exceed some bounds
+askforMove(x, y, timelimit)
+
+console.log(examine project A at 0800hrs
+enter greg junior log great ape torn up) {
+	gerome enters building
+}
